@@ -39,7 +39,7 @@ const con = mysql.createConnection({
   host: 'sql3.freemysqlhosting.net',
   user: 'sql3483735',
   password: 'n7LPBzL5Px',
-  database: '	sql3483735'
+  database: 'sql3483735'
 })
 con.connect((err) => {
   if (err) throw err;
