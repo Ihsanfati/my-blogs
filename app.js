@@ -32,14 +32,14 @@ app.use(
 
 // setup database
 const con = mysql.createConnection({
-  //host: '127.0.0.1',
-  //user: 'root',
-  //password: '',
-  //database: 'my_blogs'
-  host: 'sql3.freemysqlhosting.net',
-  user: 'sql3483735',
-  password: 'n7LPBzL5Px',
-  database: 'sql3483735'
+  host: '127.0.0.1',
+  user: 'root',
+  password: '',
+  database: 'my_blogs'
+  //host: 'sql3.freemysqlhosting.net',
+  //user: 'sql3483735',
+  //password: 'n7LPBzL5Px',
+  //database: 'sql3483735'
 })
 con.connect((err) => {
   if (err) throw err;
@@ -296,7 +296,7 @@ app.use(function(err, req, res, next) {
 });
 
 // menyalakan server
-app.set('port', 3000);
+app.set('port', 3001);
 app.listen(app.get('port'));
 
 module.exports = app;
